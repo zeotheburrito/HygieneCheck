@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CheckCluster.Master.cs" Inherits="HygieneCheck.CheckCluster" %>
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+    <style>
+        th {
+            padding: 5px;
+        }
+        td {
+            padding: 5px;
+        }
+        .label {
+            color: white;
+            background-color: #f0ad4e;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .green-label {
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .button {
+            color: white;
+            background-color: #337ab7;;
+            border-color: #204d74;
+            border-radius: 5px;
+            border-width: 0.5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #286090;
+        }
+        .nav-button-inactive:hover {
+            text-decoration: none;
+            color: #23527c;
+            background-color: #eee;
+        }
+        .nav-button-active {
+            text-decoration: none;
+            color: #555;
+            cursor: default;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-bottom-color: transparent;
+            padding: 10px 20px 10px 20px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        .nav-button-inactive {
+            text-decoration: none;
+            color: #337ab7;
+            cursor: default;
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-bottom-color: rgb(221, 221, 221);
+            padding: 10px 20px 10px 20px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+        .big-button {
+            color: white;
+            background-color: #337ab7;;
+            border-color: #204d74;
+            border-radius: 5px;
+            border-width: 0.5px;
+            text-decoration: none;
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+        .big-button:hover {
+            background-color: #286090;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .center-button {
+            width: fit-content;
+            max-width: fit-content;
+            font-weight: normal;
+            text-decoration: none;
+            display: block;
+            color: white;
+            background-color: #337ab7;;
+            border-color: #204d74;
+            border-radius: 5px;
+            border-width: 0.5px;            
+            padding: 10px;
+            margin: auto;
+        }
+        .center-button:hover {
+            background-color: #286090;
+        }
+        .link {
+            color: inherit;
+        }
+        .link:hover {
+            color: inherit;
+            text-decoration: none;
+        }
+        .textarea {
+            width: 100%;
+            max-width: 100%;
+        }
+        .image-preview-container {
+            display: inline-block;
+            margin: 5px;
+            border: 1px solid #ddd;
+            padding: 5px;
+            position: relative;
+        }
+        .image-preview img {
+            max-height: 500px;
+            height: auto;
+            width: auto;
+        }
+        .delete-button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: grey;
+            opacity: 50%;
+            color: white;
+            border: none;
+            border-radius: 10%;
+            cursor: pointer;
+            padding: 5px;
+            font-size: 14px;
+            line-height: 1;
+            width: 24px; /* Set button width */
+            height: 24px; /* Set button height */
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .delete-button:hover {
+            opacity: 70%;
+        }
+    </style>
+    <h1>Hygiene Check - 08 February 2024</h1>
+    <h1>Cluster A-2L</h1>
+    <hr />
+    <button class="big-button"><a class="link" href="../HygieneCheckDetail">Back to Cluster List</a></button>
+    <asp:ContentPlaceHolder ID="RoomContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
